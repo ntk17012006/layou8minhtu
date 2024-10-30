@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline-block Example</title>
+    <style>
+        body{
+            width: 100%;
+            height:100px;
+        }
+        .block{
+            width: 100%;   /*rộng*/
+            height: 100px; /*ngang*/
+            text-align: center;
+        }
+        .outer-layout {
+            display: block; /* Kích hoạt flexbox */
+            background-color: rgb(255, 255, 255);
+            width: 100%;
+            height: 1402px;
+        }
+        .bot{
+            position: absolute;
+            top: 5%;
+            background-color: white;
+            width: 900px;
+            height: 30px;
+            text-align: center;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 6px;
+            margin: 15px;/* Khoảng cách giữa các khối */
+        }
+        .rd{/*anh 7*/
+            background-image:url(https://cdnmedia.baotintuc.vn/Upload/XjfgEPYM30O8z6jY3MHxSw/files/2023/01/1701/4.jpg);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 82%;
+            float: left;
+            height: 200px;
+            margin-bottom:10px;
+            margin-left:10px;
+            margin-right:20px;
+        }
+        .bd{/*ảnh 6*/
+            background-image:url(https://diachiamthuc.vn/wp-content/uploads/2022/03/Gioi-thieu-ve-Tour-Ba-Na-Hill-Da-Nang-1-ngay.jpg);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 45%;
+            float: right;
+            height: 200px;  
+            margin-left: 10px;
+        }
+        .bl{/*ảnh 5*/
+            background-image:url(https://th.bing.com/th/id/OIP.4SQtUPJFwk50_ZfUVh1lDAHaEo?w=280&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 45%;
+            float: left;
+            height: 200px;
+            margin-left: 10px;
+        }
+        .pe{/*ảnh 3*/
+            background-image:url(https://nemtv.vn/wp-content/uploads/2019/02/anh-ho-guom-ha-noi-8-nemtv.jpg);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 45%;
+            float: left;
+            height: 200px;
+            margin-left: 10px;
+        }
+        .yl{/*ảnh 2*/
+            background-image:url(https://focusasiatravel.vn/wp-content/uploads/2019/05/hue-compressed.jpg);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 40%;
+            height: 420px;
+            float: left;
+            margin: 10px;
+        }
+        .gl{ /*anh 1*/
+            background-image:url(https://cdn.getyourguide.com/img/tour/648687ceb19aa.jpeg/148.jpg);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            font-size: 30px;
+            width: 100%;
+            float: left;
+            height: 300px;
+            color: rgb(243, 4, 4);
+            text-align: center;
+            font-size: 30px;
+        }
+        .bk{/*ảnh 4*/
+            background-image:url(https://focusasiatravel.vn/wp-content/uploads/2019/11/vinh-ha-long.jpg);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 45%;
+            float: right;
+            height: 200px;
+            margin-left: 10px;
+        }
+        
+        
+        .db{/*ảnh 8*/
+            background-image:url(https://ik.imagekit.io/tvlk/blog/2022/08/du-lich-phu-tho-9-1024x640.jpeg?tr=dpr-2,w-675);
+            background-size: cover; /* Giữ tỷ lệ và lấp đầy */
+            background-position: center; /* Căn ảnh ở giữa */
+            width: 100%;
+            float: left;
+            height: 300px;
+            margin-bottom: 45px;
+        }
+        .ab{
+            margin-left: 300px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            width: 68%;
+            height: 780px;
+            float: left;
+            font-size: 20px;
+            color: rgb(19, 232, 232);
+        }
+        .bc{
+            display: block;
+            width: 40%;
+            height: 200px;
+            float: left;  
+            margin: 10px;
+        }
+        .cd{
+            display: block;
+            width: 40%;
+            height: 200px;
+            float: left; 
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+<div class="outer-layout">
+    <div class="block gl">
+        <nav class="bot">
+        <a href="">Trang Chủ</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Địa Danh Nổi Bật</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Thông Tin Khu Vực</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="">Đánh Giá</a>
+    </nav>
+        </div>
+    <div class="ab">
+        <center><h2><font color="red" >NHỮNG ĐỊA DANH NỔI TIẾNG  CỦA VIỆT NAM</font></h2>
+            <p>Với những khu du lịch Việt Nam nổi tiếng bạn không nên bỏ lỡ!</p></center>
+    <div class="block yl"></div>
+    <div class="block bc">
+        <div class="block pe"></div>
+        <div class="block bk"></div></div>
+    <div class="bkock cd">
+        <div class="block bl"></div>
+        <div class="block bd"></div></div>
+    <div class="block rd"></div>
+      </div>
+    <div class="block db"></div>
+</div>
+</body>
+</html>
